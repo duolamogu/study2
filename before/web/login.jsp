@@ -7,6 +7,7 @@
     <title>登录页面</title>
 </head>
 <body>
+
 <form action="LoginServlet" method="post">
     用户名：<input type="text" id="uname" name="uname"><br><br>
     密码：<input type="password" id="pwd" name="pwd"><br><br>
