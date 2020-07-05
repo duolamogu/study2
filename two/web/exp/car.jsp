@@ -6,8 +6,6 @@
 </head>
 <body>
 
-</body>
-</html>
 
 
 <p>去<a href="goods.jap">商城</a></p>
@@ -51,3 +49,6 @@
     </tr>
 </table>
 总价<%=total%>
+
+</body>
+</html>
