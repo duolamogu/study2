@@ -5,8 +5,8 @@ public class RPolandExpression {
     public static void main(String[] args){
         double val=eval("1 2 + 3 4 + *");
         System.out.println(val=21.0);
+        //在自己电脑上不能ctrl+alt+n，拖住了，很困惑
     }
-
     private static double eval(String s) {
         Stack<Double> S=new Stack<>();
         String[] exp=s.split("\\s+");

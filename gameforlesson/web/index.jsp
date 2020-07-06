@@ -13,7 +13,6 @@
     <input type="submit">
     <input type="reset">
   </form>
-
   A:<%=request.getParameter("A")%><br/>
   B:<%=request.getParameter("B")%><br/>
   C:<%=request.getParameter("C")%><br/>
@@ -24,12 +23,28 @@
     int c=0;
     int d=0;
     try{
-        a=Integer.parseInt(request.getParameter('A'));
-        b=Integer.parseInt(request.getParameter('B'));
-        c=Integer.parseInt(request.getParameter('C'));
-        d=Integer.parseInt(request.getParameter('D'));
+        a=Integer.parseInt(request.getParameter("A"));
+        b=Integer.parseInt(request.getParameter("B"));
+        c=Integer.parseInt(request.getParameter("C"));
+        d=Integer.parseInt(request.getParameter("D"));
     }catch(Exception e){}
     String result=ai.Engine.solve24(a,b,c,d);
+    out.println(result);
   %>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
