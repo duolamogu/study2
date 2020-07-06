@@ -9,7 +9,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>duo</servlet-name>
-        <url-pattern>/HelloWorld</url-pattern>
+        <url-pattern>HelloWorld</url-pattern>
     </servlet-mapping>
 
     <servlet>
@@ -18,7 +18,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>rai</servlet-name>
-        <url-pattern>/test/rai</url-pattern>
+        <url-pattern>rai</url-pattern>
     </servlet-mapping>
 
     <servlet>
@@ -27,7 +27,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>mi</servlet-name>
-        <url-pattern>/test/mi</url-pattern>
+        <url-pattern>mi</url-pattern>
     </servlet-mapping>
 
     <servlet>
@@ -36,7 +36,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>ReadParams</servlet-name>
-        <url-pattern>/test/ReadParams</url-pattern>
+        <url-pattern>ReadParams</url-pattern>
     </servlet-mapping>
     
     <servlet>

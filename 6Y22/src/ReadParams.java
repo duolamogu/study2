@@ -57,7 +57,6 @@ public class ReadParams extends HttpServlet {
         }
         out.println("\n</table>\n</body></html>");
     }
-
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doGet(request, response);
     }
