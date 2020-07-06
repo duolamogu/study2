@@ -42,6 +42,7 @@ public class RPolandExpression {
             Double.parseDouble(tok);
             return true;
         }catch(Exception e){
+            //出现异常时返回false
             return false;
         }
     }
