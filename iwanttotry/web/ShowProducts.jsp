@@ -14,6 +14,7 @@
     <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
     <meta http-equiv="description" content="This is my page">
 </head>
+
 <body bgcoclor="#ffffff">
 <%
     Map products=new HashMap();
@@ -25,15 +26,30 @@
 <h1>choise</h1>
 <form name="productForm" action="http://localhost:8080/ShopCart.jsp" method="POST">
     <input type="hidden" name="action" value="purchase">
+    <template>
+    <div>
     <table border="1" cellspacing="0">
         <tr bgcolor="#CCCCCC">
             <tr bgcolor="#CCCCCC">
         <td>序号</td>
         <td>名称</td>
-        <td>描述</td>
+        <td>数量</td>
         <td>价格</td>
         <td>加入购物车</td>
             </tr>
+        <tr v-for="(i,index) in title">
+            <td>{{i.id}}</td>
+            <td>{{i.name}}</td>
+            <td>
+                <button @click="minus(index)">-</button>
+                {{i.num}}
+                <button @click="add(index)">+</button>
+            </td>
+            <td>{{i.price}}</td>
+
+            <td>{{i.num*i.price}}</td>
+            <td><button @click="del(index)">移除</button></td>
+        </tr>
         <%
             Set productIDSet=products.keySet();
             Iterator it=productIDSet.iterator();
@@ -64,6 +80,33 @@
         %>
         </tr>
     </table>
+        总价$:{{totalCount()}}
+    </div>
+</template>
+    <script>
+        export default{
+            methods:{
+                minus(index){
+                    if(this.title[index].num>1){
+                        this.title[index].num--
+                    }
+                    add(index){
+                        this.title[index].num++
+                    }
+                    del(index){
+                        this.title.splice(index,1)
+                    }
+                    totalCount(){
+                        let total=0
+                        for(let i=0,1=this.title.length;i<1;i++){
+                            total+=this.title[i].num*this.title[i].prince;
+                        }
+                        return total;
+                    }
+                }
+            }
+        }
+    </script>
 </form>
 </body>
 </html>
