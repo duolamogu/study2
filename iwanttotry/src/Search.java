@@ -1,6 +1,5 @@
 import com.sun.net.httpserver.HttpServer;
 import com.sun.net.httpserver.HttpsServer;
-
 import javax.servlet.ServletException;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServlet;

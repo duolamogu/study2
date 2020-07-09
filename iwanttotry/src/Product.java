@@ -1,5 +1,4 @@
 import java.io.Serializable;
-
 public class Product {
     private String id;//产品标识
     private String name;//产品名
