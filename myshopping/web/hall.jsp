@@ -1,5 +1,5 @@
-<%@ page language="java" import="java.util.*,com.hsp.domain.*" pageEncoding="utf-8"%>
-<%@ page import="b.domain.Book" %>
+<%@ page language="java" import="java.util.*,b.*" pageEncoding="utf-8"%>
+<%@ page import="b.Book" %>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -18,7 +18,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <body>
     <h1>欢迎访问购物大厅</h1>
     <table border="1">
-    <tr><th>书名</th><th>价格</th><th>出版社</th><th>点击购买</th></tr>
+    <tr><th>书名</th><th>价格</th><th>出版社</th><th>点击购买</th> </tr>
     <%
     ArrayList al=(ArrayList)request.getAttribute("books");
     for (int i=0;i<al.size();i++){

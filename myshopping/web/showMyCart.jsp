@@ -1,5 +1,5 @@
-<%@ page language="java" import="java.util.*,b.domain.Book,com.hsp.domain.*" pageEncoding="utf-8"%>
-<!DOCTYPE HTML>
+<%@ page language="java" import="java.util.*,b.Book,b.*" pageEncoding="utf-8"%>
+<!DOCTYPE html>
 <html>
   <head>
     <title>查看购物车</title>

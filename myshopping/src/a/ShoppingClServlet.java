@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import b.service.MyCart;
+
 public class ShoppingClServlet extends HttpServlet {
 	public void destroy() {
 		super.destroy();
